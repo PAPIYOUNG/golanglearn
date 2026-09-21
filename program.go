@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"gobasic/calculator"
 )
 func main(){
 	fmt.Println("Hello PAPI");
@@ -278,6 +279,17 @@ fmt.Println(product1.price)
 //change data in struct
 product1.category = "device"
 fmt.Println(product1)
+
+product2 := Product{name:"Mouse",price: 150,category: "computer",discount: 20}
+fmt.Println(product2)
+
+
+//Package
+resultPackage := calculator.Add(20,30)
+fmt.Println(resultPackage)
+
+resultPackage2 := calculator.Subtract(20,30)
+fmt.Println(resultPackage2)
 
 }
 
